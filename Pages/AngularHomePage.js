@@ -1,3 +1,8 @@
+var chai = require('chai');
+var chaiAsPromised = require('chai-as-promised');
+chai.use(chaiAsPromised);
+var expect = chai.expect;
+
 class AngularHomePage {
     constructor() {
         this.getTitle = browser.getTitle();
@@ -7,19 +12,20 @@ class AngularHomePage {
     }
 
     verifyTitle = (title) => {
-        expect(this.getTitle).toEqual(title);
+        return expect(this.getTitle).to.eventually.equal(title);
     };
 
     enterTask = (task) => {
-        this.taskField.sendKeys(task);
+        return this.taskField.sendKeys(task);
     };
 
     clickAddBtn = () => {
-        this.addBtn.click();
+        browser.sleep(2000);
+        return this.addBtn.click();
     };
 
     verifyTaskList = (task) => {
-        expect(this.taskList.get(2).getText()).toEqual(task);
+       return expect(this.taskList.get(2).getText()).to.eventually.equal(task);
     }
 }
 

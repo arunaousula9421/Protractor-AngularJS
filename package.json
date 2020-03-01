@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/arunaousula9421/Protractor-AngularJS/issues"
   },
-  "homepage": "https://github.com/arunaousula9421/Protractor-AngularJS#readme"
+  "homepage": "https://github.com/arunaousula9421/Protractor-AngularJS#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "protractor-cucumber-framework": "^6.2.0"
+  },
+  "dependencies": {
+    "cucumber": "^6.0.5",
+    "cucumber-pretty": "^6.0.0"
+  }
 }
