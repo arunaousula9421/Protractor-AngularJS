@@ -1,0 +1,19 @@
+{
+  "name": "protractor-angularjs",
+  "version": "1.0.0",
+  "description": "Sample Protratcor Tests to run on both Jasmine and Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arunaousula9421/Protractor-AngularJS.git"
+  },
+  "author": "Arunkumar Aousula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arunaousula9421/Protractor-AngularJS/issues"
+  },
+  "homepage": "https://github.com/arunaousula9421/Protractor-AngularJS#readme"
+}
